@@ -22,6 +22,7 @@ header nav ul li a {
   text-decoration: none;
   width: max-content;
   padding: 3px;
+  color: black;
 }
 header nav ul li a::after {
   content: "";
@@ -48,6 +49,10 @@ header nav ul li a:hover::after {
   place-content: center;
 }
 
+#input_image {
+  max-width: 600px;
+  max-height: 500px;
+}
 #output_area {
   width: 30dvw;
   resize: none;
