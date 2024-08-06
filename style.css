@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  padding: 10px 10px 10px 10px;
+}
+
+header nav ul li a {
+  position: relative;
+  text-decoration: none;
+  width: max-content;
+  padding: 3px;
+}
+header nav ul li a::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  background-image: linear-gradient(to right, red, blue);
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+  z-index: -1;
+}
+header nav ul li a:hover::after {
+  width: 100%;
+}
+.input_output {
+  display: flex;
+  place-content: center;
+  align-items: center;
+}
+.buttons {
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  place-content: center;
+}
+
+#output_area {
+  width: 30dvw;
+  resize: none;
+  height: 30dvh;
+  margin: 0px 0px 0px 10px;
+  text-align: center;
+  place-content: center;
+}
